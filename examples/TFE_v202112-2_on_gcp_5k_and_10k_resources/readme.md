@@ -4,7 +4,7 @@
 
 Code used from repo : https://github.com/Galser/tf-large-state-generator-a
 
-Software : TFE v202112-2 running on Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.4.0-1064-gcp x86_64)
+Software : TFE v202112-2 running on  Ubuntu 18.04.6 LTS (GNU/Linux 5.4.0-1064-gcp x86_64)
 Agents : Binary exectuion mode , tfc-agent 1.0.2
 
 Downloaded from URL : https://releases.hashicorp.com/tfc-agent/1.0.2/tfc-agent_1.0.2_linux_amd64.zip  
