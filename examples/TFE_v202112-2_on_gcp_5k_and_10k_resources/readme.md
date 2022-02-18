@@ -40,11 +40,12 @@ PLAN : 2 minutes, and 32 seconds
 
 APPLY : 10 minutes, and 27 seconds
 
-
 Case B) 2 TF agents in the same region/dc, Western Europe :
 ==================================================================================
 
 PLAN  ---> 55 microseconds :
+
+```
 ......................................................................
 				          microseconds to download and unpack binaries
  				<1 second to download config
@@ -53,6 +54,7 @@ PLAN  ---> 55 microseconds :
                10 seconds to upload JSON plan
                 ~1 second to make and upload providers schamas   
  				~2 seconds - to persist FS to remote storage
+```
 
 APPLY ---> "3 minutes, and 41 seconds"
 
@@ -63,6 +65,8 @@ Case C) 2 TF agents, Asia-geo pool, against TFE in Western Europe
 ==================================================================================
 
 PLAN ---> 9 minutes, and 42 seconds :
+
+```
 ......................................................................
 				          microseconds to download and unpack binaries
  				1 second to download config
@@ -71,6 +75,7 @@ PLAN ---> 9 minutes, and 42 seconds :
                16 seconds to upload JSON plan
                 4 seconds to make and upload providers schamas   
  4 minutes, and 7 seconds - to persist FS to remote storage ( uploading blob winto Archivist )
+```
 
  APPLY ---> "13 minutes, and 46 seconds"
 
@@ -79,12 +84,11 @@ PLAN ---> 9 minutes, and 42 seconds :
 
 # Short summary
 
- --------------------------------------------------------------------------+
  |        |     Local TFE    |      Agents closeby*  |   Agents far away   |
- +--------|------------------|-----------------------|---------------------|
+ |--------|------------------|-----------------------|---------------------|
  | plan   |    2m 32 seconds |        55 seconds     |    9 m 42 seconds   |
  | apply  |   10m 27 sceonds |     3m 41 seconds     |   13 m 46 seconds   |
- --------------------------------------------------------------------------+
+
 
   > * So - properly configured agents, that are located closeby - can actually be faster then TFE itself, probably due to the fact that they don't need to run UI  and don't need to parse JSON for display and workspace/Archivist overhead is absent
 
