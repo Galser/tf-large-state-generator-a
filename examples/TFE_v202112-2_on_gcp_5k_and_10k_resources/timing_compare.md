@@ -17,15 +17,20 @@ CPU platform Intel Skylake
 RAM : 15GB
 CPU : 4 
 
-
 TFE server running in **europe-west4**
  - 2 tf-agents in one pool - running in the same zone
  - 2 tf-agents in "Asia" pool running in DC in Osaka - **asia-northeast2**
+
+Tests perfomed over course of 3 days Feb 16-Feb 18 2022, 
 
 
 ## Results for 10K resources `plan` and `apply`
 
 - State size : 11Mb
+- On average network usage goes to 67Mbit on agent in recevieng for freshly started agent; around 51 - sending 
+- Aproximately 80% of 4 CPUs is used
+- On 16GB RAM - there is still ~13Gb free memory
+- Workspaces have Terrafomr 1.0.11 configured
 
 
 Case A) Running code in TFE remote execution mode (e.g. execution in TFE server) :
