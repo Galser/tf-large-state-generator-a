@@ -1,0 +1,23 @@
+plan start
+
+{"@level":"info","@message":"Handling job","@module":"terraform-build-worker","@timestamp":"2022-02-18T13:16:32.899873Z","git_commit":"1edb75c","isolation_type":"docker","job":{"run_id":"run-Gab1oTq5rnyrcjpo","run_type":"plan","owner":{"org_id":"org-uNCnXcLxiWSrwsaN","org_name":"test","workspace_id":"ws-ZZWw99R9vjJRwWJw","workspace_name":"tf-large-state-generator-a"}}}
+
+plan end
+
+{"@level":"debug","@message":"PUT http://ptfe_archivist:7675/v1/object/dmF1bHQ6djE6R0hHMGtsN1FmK1ZYWGlQS3NUTGowMnVEanlIY0o4ZUxaRjM5VTZRVVlGMko0V0NpN054dGduZHBPVERPMnJNZThHZHh6NzZ2cE5ZbU9OcTVqNE8wUlpvbEtUeGpVSk5oTGpyUE50aEo3MGV2eEU0SkZZNzA0SEtRQWVjV3FwWVFIcHF0WmtnYmlZNTZ
+zNlo1RWs1MXQrQmVDUzNiVTlBRzVHS3NPWEd4UUV2N21xdXJTQTFHajBqb1NXYTUvb0ZlaHNIMDBqc0hYSENpRFovSnlzcmVvMW1PY1RzNllwSW5USkgyTnJYSnJ6NGl0cStmOW5zRzFaVjhkajBqUmNCSG9SYVNtSnN0MHRRM2N1RnJCSUYweC9hZEhzczROeHpId1ltQmlGM1lsQUV0UzlsSjlzK0owekdJTndZQg","@module":"terraform-build-worker
+.retryablehttp","@timestamp":"2022-02-18T13:19:04.843474Z","git_commit":"1edb75c","isolation_type":"docker"}
+
+apply start 
+
+{"@level":"info","@message":"Dequeued job","@module":"terraform-build-worker","@timestamp":"2022-02-18T13:19:05.706663Z","git_commit":"1edb75c","isolation_type":"docker","job":{"run_id":"run-Gab1oTq5rnyrcjpo","run_type":"apply","owner":{"org_id":"org-uNCnXcLxiWSrwsaN","org_name":"test","workspace_id":"ws-ZZWw99R9vjJRwWJw","workspace_name":"tf-large-state-generator-a"}}}
+
+apply end
+
+{"@level":"info","@message":"Handled job successfully","@module":"terraform-build-worker","@timestamp":"2022-02-18T13:29:32.834922Z","git_commit":"1edb75c","isolation_type":"docker","job":{"run_id":"run-Gab1oTq5rnyrcjpo","run_type":"apply","owner":{"org_id":"org-uNCnXcLxiWSrwsaN","org_name":"test","workspace_id":"ws-ZZWw99R9vjJRwWJw","workspace_name":"tf-large-state-generator-a"}}}
+{"@level":"debug","@message":"PUT http://ptfe_archivist:7675/v1/object/dmF1bHQ6djE6c0lUaFdLeEx2RHppNDZLNUJPZ042enUxdHJUVnFoN01DYWZCZ1hhNmpRVGlVMG9RYWlSL2pLd0w3YTN2REY4YkhPV0FEWGNTeGFHVmtmUlZaMkV2Qm54MDdoRTRsZk9vUW5MdFJxUU03VUpISjVzbUNNR2oxa1N5VFNxZ1JWS204c2kzTWR5RVN0R0FxN0pyLzhBQWF2NXJ4eGdCQlFRYTF2bGpUamFKenBYbjVZUDlRdTZNY3kyeFZUalhFZVVIN0x4TFZlcUFhQmplQWMrWHRCWFhwME1kWFVEbmd5SHdxTmd2K2ZMY3k0MHZlck5nUW9RR2RDajh1TytrM29GWXBsc0EyTG5Sb2EweHpxZ0l6QkI2TkozeU5NZXNsNmdScjUreEVVUk1ZdHU2cW1zS0N1ak4vYlNSWkR1U0VjMWs","@module":"terraform-build-worker.retryablehttp","@timestamp":"2022-02-18T13:29:32.838815Z","git_commit":"1edb75c","isolation_type":"docker"}
+
+
+plan : 2 minutes, and 32 seconds
+
+apply : 10 minutes, and 27 seconds
