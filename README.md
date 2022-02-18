@@ -22,3 +22,5 @@ Initial purpose was to test the modes of execution in TFE
 ## Examples
 
 Sub-folder examples contains some reports of using the code with screenshots and logs. 
+
+[TFE v20212-2 10K resources test with agents and without.](https://github.com/Galser/tf-large-state-generator-a/blob/main/examples/TFE_v202112-2_on_gcp_5k_and_10k_resources/readme.md)
