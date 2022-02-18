@@ -1,0 +1,51 @@
+10K resources, tf-agent execution, Asia-geo pool, against TEF in Western Europe
+State file size 11Mb
+
+Network usage goes to 67Mbit on agent in receviing for freshly started agent
+around 51 - sending 
+Around 80% of 4 CPUs is used
+on 16GB RAM - there is still around 13Gb free memory
+
+PLAN 
+=====
+
+2022-02-18T10:51:49.754Z [INFO]  core: Job received: job.type=plan job.id=run-6WE73WK3UyBcJHmM
+2022-02-18T10:51:49.755Z [INFO]  terraform: Handling run: run.id=run-6WE73WK3UyBcJHmM run.operation=plan organization.name=test workspace.name=tf-large-state-generator-a
+2022-02-18T10:51:49.755Z [INFO]  terraform: Downloading Terraform release: url=https://releases.hashicorp.com/terraform/1.0.11/terraform_1.0.11_linux_amd64.zip
+2022-02-18T10:51:49.953Z [INFO]  terraform: Extracting Terraform from release archive
+2022-02-18T10:51:50.425Z [INFO]  terraform: Terraform CLI details: version=1.0.11
+2022-02-18T10:51:50.425Z [INFO]  terraform: Downloading Terraform configuration
+2022-02-18T10:51:50.758Z [INFO]  terraform: Running terraform init
+2022-02-18T10:51:55.441Z [INFO]  terraform: Running terraform plan
+2022-02-18T10:57:04.129Z [INFO]  terraform: Generating and uploading plan JSON
+2022-02-18T10:57:20.340Z [INFO]  terraform: Generating and uploading provider schemas JSON
+2022-02-18T10:57:24.499Z [INFO]  terraform: Persisting filesystem to remote storage
+2022-02-18T11:01:31.056Z [INFO]  terraform: Finished handling run
+
+---> 9 minutes, and 42 seconds , from which : 
+
+				          microseconds to download and unpack binaries
+ 				1 second to download config
+ 				5 seconds to init
+5 minutes, and 9 seconds - for plan itself
+               16 seconds to upload JSON plan
+                4 seconds to make and upload providers schamas   
+ 4 minutes, and 7 seconds - to persist FS to remote storage ( uploading blob winto Archivist )
+
+
+
+APPLY 
+=====
+
+2022-02-18T11:01:32.049Z [INFO]  core: Job received: job.type=apply job.id=run-6WE73WK3UyBcJHmM
+2022-02-18T11:01:32.049Z [INFO]  terraform: Handling run: run.id=run-6WE73WK3UyBcJHmM run.operation=apply organization.name=test workspace.name=tf-large-state-generator-a
+2022-02-18T11:01:32.103Z [INFO]  terraform: Extracting Terraform from release archive
+2022-02-18T11:01:32.592Z [INFO]  terraform: Terraform CLI details: version=1.0.11
+2022-02-18T11:01:32.592Z [INFO]  terraform: Restoring filesystem from remote storage
+2022-02-18T11:01:35.636Z [INFO]  terraform: Running terraform init
+2022-02-18T11:01:39.521Z [INFO]  terraform: Running terraform apply
+2022-02-18T11:15:18.254Z [INFO]  terraform: Finished handling run
+
+---> 13 minutes, and 46 seconds
+
+from which apply itself took 13 minutes, and 39 seconds

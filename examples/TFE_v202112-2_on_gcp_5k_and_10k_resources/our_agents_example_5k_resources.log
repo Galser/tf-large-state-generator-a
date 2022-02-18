@@ -1,0 +1,51 @@
+
+5K resources, tf-agent execution, local-geo pool, attempt 1
+
+
+Network usage goes to 28,3Mbit on agent in receviing
+around 51 - sending 
+Around 80% of 4 CPUs is used
+on 16GB RAM - there is still around 13Gb free memory
+
+PLAN 
+=====
+
+2022-02-17T15:34:08.628Z [INFO]  core: Waiting for next job
+
+
+2022-02-17T15:42:31.932Z [INFO]  core: Job received: job.type=plan job.id=run-VyNrg8Q4QWUXafEy
+2022-02-17T15:42:31.932Z [INFO]  terraform: Handling run: run.id=run-VyNrg8Q4QWUXafEy run.operation=plan organization.name=test workspace.name=tf-large-state-generator-a
+2022-02-17T15:42:31.988Z [INFO]  terraform: Extracting Terraform from release archive
+2022-02-17T15:42:32.507Z [INFO]  terraform: Terraform CLI details: version=1.0.11
+2022-02-17T15:42:32.507Z [INFO]  terraform: Downloading Terraform configuration
+2022-02-17T15:42:32.609Z [INFO]  terraform: Running terraform init
+2022-02-17T15:42:33.547Z [INFO]  terraform: Running terraform plan
+2022-02-17T15:42:57.481Z [INFO]  terraform: Generating and uploading plan JSON
+2022-02-17T15:43:02.961Z [INFO]  terraform: Generating and uploading provider schemas JSON
+2022-02-17T15:43:03.939Z [INFO]  terraform: Persisting filesystem to remote storage
+2022-02-17T15:43:05.300Z [INFO]  terraform: Finished handling run
+
+2022-02-17T15:43:05.774Z [INFO]  core: Waiting for next job
+
+---> 32 seconds
+
+
+
+APPLY 
+=====
+
+2022-02-17T15:36:56.720Z [INFO]  core: Waiting for next job
+
+2022-02-17T15:39:39.807Z [INFO]  agent: Core version is up to date: version=1.0.2
+2022-02-17T15:43:11.828Z [INFO]  core: Job received: job.type=apply job.id=run-VyNrg8Q4QWUXafEy
+2022-02-17T15:43:11.828Z [INFO]  terraform: Handling run: run.id=run-VyNrg8Q4QWUXafEy run.operation=apply organization.name=test workspace.name=tf-large-state-generator-a
+2022-02-17T15:43:11.903Z [INFO]  terraform: Extracting Terraform from release archive
+2022-02-17T15:43:12.594Z [INFO]  terraform: Terraform CLI details: version=1.0.11
+2022-02-17T15:43:12.594Z [INFO]  terraform: Restoring filesystem from remote storage
+2022-02-17T15:43:12.898Z [INFO]  terraform: Running terraform init
+2022-02-17T15:43:13.732Z [INFO]  terraform: Running terraform apply
+2022-02-17T15:45:56.710Z [INFO]  terraform: Finished handling run
+
+2022-02-17T15:45:57.047Z [INFO]  core: Waiting for next job
+
+---> 2 minutes, and 45 seconds

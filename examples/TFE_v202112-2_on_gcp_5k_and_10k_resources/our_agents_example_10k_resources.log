@@ -1,0 +1,46 @@
+10K resources, tf-agent execution, local-geo pool, attempt 1
+State file size 11Mb
+
+PLAN 
+=====
+
+2022-02-17T15:54:20.008Z [INFO]  core: Job received: job.type=plan job.id=run-mzR5aXfenycrU95p
+2022-02-17T15:54:20.008Z [INFO]  terraform: Handling run: run.id=run-mzR5aXfenycrU95p run.operation=plan organization.name=test workspace.name=tf-large-state-generator-a
+2022-02-17T15:54:20.083Z [INFO]  terraform: Extracting Terraform from release archive
+2022-02-17T15:54:20.739Z [INFO]  terraform: Terraform CLI details: version=1.0.11
+2022-02-17T15:54:20.739Z [INFO]  terraform: Downloading Terraform configuration
+2022-02-17T15:54:20.799Z [INFO]  terraform: Running terraform init
+2022-02-17T15:54:21.907Z [INFO]  terraform: Running terraform plan
+2022-02-17T15:55:02.587Z [INFO]  terraform: Generating and uploading plan JSON
+2022-02-17T15:55:12.329Z [INFO]  terraform: Generating and uploading provider schemas JSON
+2022-02-17T15:55:13.447Z [INFO]  terraform: Persisting filesystem to remote storage
+2022-02-17T15:55:15.072Z [INFO]  terraform: Finished handling run
+2022-02-17T15:55:15.566Z [INFO]  core: Waiting for next job
+
+---> 55 seconds
+
+				          microseconds to download and unpack binaries
+ 				<1 second to download config
+ 				<1 second to init
+ 			   41 seconds - for plan itself
+               10 seconds to upload JSON plan
+                ~1 second to make and upload providers schamas   
+ 				~2 seconds - to persist FS to remote storage
+
+
+APPLY 
+=====
+
+2022-02-17T15:55:35.430Z [INFO]  core: Job received: job.type=apply job.id=run-mzR5aXfenycrU95p
+2022-02-17T15:55:35.430Z [INFO]  terraform: Handling run: run.id=run-mzR5aXfenycrU95p run.operation=apply organization.name=test workspace.name=tf-large-state-generator-a
+2022-02-17T15:55:35.487Z [INFO]  terraform: Extracting Terraform from release archive
+2022-02-17T15:55:35.994Z [INFO]  terraform: Terraform CLI details: version=1.0.11
+2022-02-17T15:55:35.994Z [INFO]  terraform: Restoring filesystem from remote storage
+2022-02-17T15:55:36.309Z [INFO]  terraform: Running terraform init
+2022-02-17T15:55:37.008Z [INFO]  terraform: Running terraform apply
+2022-02-17T15:59:15.791Z [INFO]  terraform: Finished handling run
+2022-02-17T15:59:16.132Z [INFO]  core: Waiting for next job
+
+---> 3 minutes, and 41 seconds
+
+from which apply itself took 3 minutes, and 38 seconds
