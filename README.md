@@ -19,7 +19,7 @@ Initial purpose was to test the modes of execution in TFE
 
 
 
-## Examples.
+## Examples
 
 Sub-folder examples contains some reports of using the code with screenshots and logs. 
 
