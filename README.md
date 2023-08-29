@@ -1,6 +1,6 @@
 # tf-large-state-generator-a
 
-Repo that generates  large state in Terraform. Option A. Code creates "random_pets"+"random_string" resources 
+Repo that generates a large state in Terraform. Option A. Code creates "random_pets"+"random_string" resources 
 and 3 counters that can be changed to adjust size and potential CPU load of plan/apply.
 
 
